@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #333;
+        }
+        .dropdown ul , .dropdown li{
+            margin: 0;
+            padding: 0;        
+
+        }
+        .dropdown ul{
+            background: gray;
+            list-style-type: none; 
+            width: 100%;
+        } 
+        .dropdown li{
+            float: left;
+            position: relative;
+            width: auto;
+        }
+        .dropdown a{
+            background: #3016e6;
+            color:white ;
+            font-weight: bold;
+            font-size: 13px;
+            font-family: 'poppins', sans-serif;
+            padding: 15px 55px ;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.25s ease;
+
+        }
+        .dropdown li:hover a{
+            background: #344495e6;
+        }
+        #submenu{
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 35px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <nav class="dropdown">
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about me</a></li>
+            <li><a href="">gallary</a>
+            <ul id="submenu">
+                <li><a href="">svg canavas</a></li>
+                <li><a href="">css js</a></li>
+                <li><a href="">wordpress</a></li>
+            </ul>
+        </li>
+        <li><a href="">news</a></li>
+        <li><a href="">contact us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
